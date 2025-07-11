@@ -1,0 +1,1210 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-16T17:47:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/68697289",
+        "alt_name": "Müllner Bräustübl",
+        "amenity": "pub",
+        "building": "yes",
+        "building:levels": "3",
+        "changing_table": "yes",
+        "cuisine": "regional",
+        "indoor_seating": "yes",
+        "name": "Augustiner Bräustübl",
+        "opening_hours": "Mo-Fr 15:00-23:00; Sa-Su 14:30-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 662 431246",
+        "roof:levels": "1",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.augustinerbier.at/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0340186,
+              47.8056821
+            ],
+            [
+              13.0339911,
+              47.8056601
+            ],
+            [
+              13.0339448,
+              47.8056231
+            ],
+            [
+              13.0339106,
+              47.8055957
+            ],
+            [
+              13.0338651,
+              47.8055593
+            ],
+            [
+              13.0338163,
+              47.8055201
+            ],
+            [
+              13.0337559,
+              47.8054718
+            ],
+            [
+              13.0337109,
+              47.8054971
+            ],
+            [
+              13.0336704,
+              47.80552
+            ],
+            [
+              13.033626,
+              47.805545
+            ],
+            [
+              13.0335934,
+              47.8055634
+            ],
+            [
+              13.0335729,
+              47.8055749
+            ],
+            [
+              13.0335487,
+              47.8055889
+            ],
+            [
+              13.0335225,
+              47.8056037
+            ],
+            [
+              13.0334887,
+              47.8056228
+            ],
+            [
+              13.0334539,
+              47.8056424
+            ],
+            [
+              13.0333466,
+              47.8057029
+            ],
+            [
+              13.0332501,
+              47.8056257
+            ],
+            [
+              13.0332259,
+              47.8056064
+            ],
+            [
+              13.0332015,
+              47.8055869
+            ],
+            [
+              13.0331864,
+              47.8055748
+            ],
+            [
+              13.0331744,
+              47.8055652
+            ],
+            [
+              13.0331448,
+              47.8055416
+            ],
+            [
+              13.0331637,
+              47.805531
+            ],
+            [
+              13.0331886,
+              47.8055169
+            ],
+            [
+              13.0332093,
+              47.8055053
+            ],
+            [
+              13.0332265,
+              47.8054955
+            ],
+            [
+              13.0332445,
+              47.8054854
+            ],
+            [
+              13.0332658,
+              47.8054734
+            ],
+            [
+              13.0332834,
+              47.8054634
+            ],
+            [
+              13.0332938,
+              47.8054576
+            ],
+            [
+              13.0333207,
+              47.8054424
+            ],
+            [
+              13.0333066,
+              47.8054312
+            ],
+            [
+              13.033302,
+              47.8054275
+            ],
+            [
+              13.0332889,
+              47.805417
+            ],
+            [
+              13.0332804,
+              47.8054102
+            ],
+            [
+              13.0333312,
+              47.8053816
+            ],
+            [
+              13.0333396,
+              47.8053883
+            ],
+            [
+              13.0333528,
+              47.8053989
+            ],
+            [
+              13.0333727,
+              47.8054148
+            ],
+            [
+              13.0333833,
+              47.8054232
+            ],
+            [
+              13.0333934,
+              47.8054312
+            ],
+            [
+              13.0334287,
+              47.8054113
+            ],
+            [
+              13.0334615,
+              47.8053928
+            ],
+            [
+              13.0335021,
+              47.80537
+            ],
+            [
+              13.0335315,
+              47.8053534
+            ],
+            [
+              13.0335557,
+              47.8053728
+            ],
+            [
+              13.0335845,
+              47.8053959
+            ],
+            [
+              13.0336062,
+              47.8054133
+            ],
+            [
+              13.0336607,
+              47.8053826
+            ],
+            [
+              13.0336897,
+              47.8053663
+            ],
+            [
+              13.0337058,
+              47.8053572
+            ],
+            [
+              13.0337195,
+              47.8053495
+            ],
+            [
+              13.0337248,
+              47.8053465
+            ],
+            [
+              13.0337462,
+              47.8053345
+            ],
+            [
+              13.0337578,
+              47.8053279
+            ],
+            [
+              13.0337835,
+              47.8053135
+            ],
+            [
+              13.0337422,
+              47.8052804
+            ],
+            [
+              13.0337143,
+              47.8052581
+            ],
+            [
+              13.0337114,
+              47.8052558
+            ],
+            [
+              13.0336745,
+              47.8052262
+            ],
+            [
+              13.0336424,
+              47.8052005
+            ],
+            [
+              13.0336766,
+              47.8051813
+            ],
+            [
+              13.0337144,
+              47.80516
+            ],
+            [
+              13.0337596,
+              47.8051345
+            ],
+            [
+              13.033784,
+              47.8051208
+            ],
+            [
+              13.033956,
+              47.8052585
+            ],
+            [
+              13.0340193,
+              47.8052228
+            ],
+            [
+              13.0341016,
+              47.8052886
+            ],
+            [
+              13.0341398,
+              47.8053191
+            ],
+            [
+              13.0342964,
+              47.8054443
+            ],
+            [
+              13.0343441,
+              47.8054825
+            ],
+            [
+              13.0343343,
+              47.805488
+            ],
+            [
+              13.0344158,
+              47.8055532
+            ],
+            [
+              13.0343972,
+              47.8055637
+            ],
+            [
+              13.0342204,
+              47.8056634
+            ],
+            [
+              13.0341845,
+              47.8056837
+            ],
+            [
+              13.0341434,
+              47.8057069
+            ],
+            [
+              13.0341017,
+              47.8056735
+            ],
+            [
+              13.0340849,
+              47.8056601
+            ],
+            [
+              13.0341619,
+              47.8056167
+            ],
+            [
+              13.0341507,
+              47.8056077
+            ],
+            [
+              13.0340718,
+              47.8056522
+            ],
+            [
+              13.034048,
+              47.8056656
+            ],
+            [
+              13.0340186,
+              47.8056821
+            ]
+          ]
+        ]
+      },
+      "id": "way/68697289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268056327",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "5",
+        "addr:postcode": "5020",
+        "addr:street": "Bergstraße",
+        "amenity": "pub",
+        "brewery": "Schnaitl",
+        "check_date:opening_hours": "2023-03-17",
+        "contact:email": "schnaitlpub@gmail.com",
+        "contact:phone": "+43 662 276295",
+        "indoor_seating": "yes",
+        "name": "Pub Schnaitl",
+        "opening_hours": "Mo-Sa 18:00-02:00",
+        "operator": "Shabbir Tahir",
+        "outdoor_seating": "no",
+        "sport": "billiards;darts;table_soccer",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0457978,
+          47.8029899
+        ]
+      },
+      "id": "node/268056327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268056329",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "13",
+        "addr:postcode": "5020",
+        "addr:street": "Bergstraße",
+        "amenity": "pub",
+        "name": "Belgiek",
+        "name:de": "Beffa Bar",
+        "website": "http://www.alchimiste-belge.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0455733,
+          47.8033835
+        ]
+      },
+      "id": "node/268056329"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268056335",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "22",
+        "addr:postcode": "5020",
+        "addr:street": "Priesterhausgasse",
+        "amenity": "pub",
+        "contact:facebook": "https://www.facebook.com/CelticSpiritSalzburg/",
+        "contact:mobile": "+43 660 6775030",
+        "contact:website": "https://www.salzburgirishpub.com/",
+        "indoor_seating": "yes",
+        "name": "Celtic Spirit - Irish Pub",
+        "opening_hours": "Mo-Su 17:00-04:00",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0450419,
+          47.8035818
+        ]
+      },
+      "id": "node/268056335"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/444666709",
+        "addr:housenumber": "65",
+        "addr:street": "Steingasse",
+        "amenity": "pub",
+        "contact:website": "http://www.dieweinstube.at/",
+        "name": "Andreas Hofer Weinstube",
+        "opening_hours": "Mo-Sa 18:00-01:00",
+        "smoking": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0515331,
+          47.800535
+        ]
+      },
+      "id": "node/444666709"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470882876",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Flip",
+        "opening_hours": "PH,Su-Tu 19:00-04:00, We-Sa 19:00-05:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0389378,
+          47.8011254
+        ]
+      },
+      "id": "node/470882876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470884291",
+        "amenity": "pub",
+        "name": "Pepe Gonzales",
+        "opening_hours": "Mo-Su 19:00-03:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0454835,
+          47.8015446
+        ]
+      },
+      "id": "node/470884291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470885266",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "12",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Shamrock",
+        "opening_hours": "Tu-Sa 12:00-04:00+, Su,Mo 12:00-04:00",
+        "outdoor_seating": "no",
+        "phone": "+43662841610",
+        "smoking": "yes",
+        "website": "https://www.shamrocksalzburg.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0457539,
+          47.8002137
+        ]
+      },
+      "id": "node/470885266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470888339",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "10",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Roses",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0456215,
+          47.8002376
+        ]
+      },
+      "id": "node/470888339"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470888454",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "16",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "alt_name": "O’Malley’s Salzburg",
+        "amenity": "pub",
+        "check_date": "2023-06-27",
+        "contact:facebook": "https://www.facebook.com/omalleyssalzburg",
+        "contact:mobile": "+43 662 849263",
+        "contact:website": "https://omalleyssalzburg.com/",
+        "indoor_seating": "yes",
+        "name": "O'Malleys Irish Pub",
+        "opening_hours": "Tu-Sa 20:00-04:00",
+        "outdoor_seating": "no",
+        "reservation": "yes",
+        "reservation:description": "Reservation over Facebook only",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0460539,
+          47.800105
+        ]
+      },
+      "id": "node/470888454"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470891768",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "8",
+        "addr:postcode": "5020",
+        "addr:street": "Lederergasse",
+        "amenity": "pub",
+        "brewery": "Zipfer",
+        "contact:email": "office@bricks-bar.at",
+        "contact:website": "https://www.bricks-bar.at/",
+        "happy_hours": "Su-Th 20:00-22:00",
+        "name": "Bricks",
+        "opening_hours": "Mo-Su 21:00-04:00",
+        "sport": "table_soccer;darts;billard",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0446921,
+          47.8021102
+        ]
+      },
+      "id": "node/470891768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/470899431",
+        "amenity": "pub",
+        "check_date": "2023-08-10",
+        "name": "Zipfer Stube",
+        "opening_hours": "Tu-Sa 10:00-24:00",
+        "wheelchair": "limited",
+        "wheelchair:description": "Als Behinderten kann man das öffentliche WC in der Philharmoniker-Gasse benützen. Ist eine Notlösung."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0440298,
+          47.7991457
+        ]
+      },
+      "id": "node/470899431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/498229464",
+        "amenity": "pub",
+        "name": "Coffey Inn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0050065,
+          47.8291101
+        ]
+      },
+      "id": "node/498229464"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/619716530",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Gabelsbergerstraße",
+        "amenity": "pub",
+        "name": "Katrin Stüberl",
+        "opening_hours": "Mo-Fr 11:00-24:00; Sa 11:00-14:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0469344,
+          47.8100666
+        ]
+      },
+      "id": "node/619716530"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/814235437",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "33",
+        "addr:postcode": "5020",
+        "addr:street": "Gstättengasse",
+        "amenity": "pub",
+        "contact:facebook": "https://www.facebook.com/MLSalzburg/",
+        "contact:mobile": "+43 650 8428 824",
+        "indoor_seating": "yes",
+        "name": "Murphy's Law",
+        "opening_hours": "Mo-Fr 14:00-02:00; Sa,Su 11:00 - 02:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0384763,
+          47.8018313
+        ]
+      },
+      "id": "node/814235437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827242534",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "10",
+        "addr:postcode": "5020",
+        "addr:street": "Bergstraße",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Alchimiste Belge",
+        "opening_hours": "Mo-Su 18:00-02:00",
+        "outdoor_seating": "yes",
+        "website": "http://www.alchimiste-belge.at/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.045733,
+          47.803423
+        ]
+      },
+      "id": "node/827242534"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827247832",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "6",
+        "addr:postcode": "5020",
+        "addr:street": "Lederergasse",
+        "amenity": "pub",
+        "contact:email": "office@salzburgwhiskeymuseum.com",
+        "contact:phone": "+43 660 6666 261",
+        "contact:website": "https://www.salzburgwhiskeymuseum.com/",
+        "name": "The Salzburg Whiskey Museum",
+        "opening_hours": "Mo-Th 19:30-02:00; Fr,Sa 19:30-03:00; Su 19:30-01:00; PH 19:30-24:00",
+        "wheelchair": "no",
+        "wifi": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0445488,
+          47.8020951
+        ]
+      },
+      "id": "node/827247832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/835422501",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "16",
+        "addr:postcode": "5020",
+        "addr:street": "Paris-Lodron-Straße",
+        "amenity": "pub",
+        "check_date": "2023-07-02",
+        "indoor_seating": "yes",
+        "name": "Harry Bär",
+        "opening_hours": "Mo-Su 17:00-01:00",
+        "outdoor_seating": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0472852,
+          47.8054224
+        ]
+      },
+      "id": "node/835422501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/920199346",
+        "amenity": "pub",
+        "name": "Weinstöckl",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0227605,
+          47.8034206
+        ]
+      },
+      "id": "node/920199346"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1392817474",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "98",
+        "addr:postcode": "5020",
+        "addr:street": "Kleßheimer Allee",
+        "amenity": "pub",
+        "name": "Taxham-Stüberl",
+        "opening_hours": "Mo-Sa 09:00-22:00, Su,PH 10:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0049937,
+          47.812125
+        ]
+      },
+      "id": "node/1392817474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1605482541",
+        "addr:housenumber": "12",
+        "addr:postcode": "5020",
+        "addr:street": "Werkstättenstraße",
+        "amenity": "pub",
+        "contact:phone": "+43 662 451085",
+        "name": "O'mis",
+        "opening_hours": "Tu-Sa 10:00-22:00; PH off",
+        "operator": "Christine Simmer-Freynschlag"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0461209,
+          47.8199647
+        ]
+      },
+      "id": "node/1605482541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1685744966",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "8",
+        "addr:postcode": "5020",
+        "addr:street": "Südtiroler Platz",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Corner am Bahnhof"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0434892,
+          47.8138324
+        ]
+      },
+      "id": "node/1685744966"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1877620725",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Boomerang",
+        "opening_hours": "Mo-Sa 10:00-23:00; Su off",
+        "outdoor_seating": "yes",
+        "source": "survey"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0661725,
+          47.8076712
+        ]
+      },
+      "id": "node/1877620725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2279703847",
+        "air_conditioning": "yes",
+        "amenity": "pub",
+        "check_date": "2023-08-21",
+        "internet_access": "no",
+        "microbrewery": "yes",
+        "name": "Stiegl Terminal",
+        "opening_hours": "11:00-21:00",
+        "operator": "Stiegl",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9977229,
+          47.7916363
+        ]
+      },
+      "id": "node/2279703847"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2522147131",
+        "amenity": "pub",
+        "cuisine": "regional",
+        "name": "Zur Klause am Tor",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0378881,
+          47.8029275
+        ]
+      },
+      "id": "node/2522147131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3284607777",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housename": "SCA",
+        "addr:housenumber": "107",
+        "addr:postcode": "5020",
+        "addr:street": "Alpenstraße",
+        "amenity": "pub",
+        "name": "Xaver",
+        "opening_hours": "Mo - Sa 08:30-24:00",
+        "phone": "+43 (0)662 26 57 23",
+        "website": "https://www.xaver-salzburg.at/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0694247,
+          47.7749761
+        ]
+      },
+      "id": "node/3284607777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3897168810",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "70",
+        "addr:postcode": "5020",
+        "addr:street": "Sternhofweg",
+        "amenity": "pub",
+        "email": "office@usk-gneis.at",
+        "name": "Sportstüberl USK Gneis",
+        "phone": "+43 (0)664 5858201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0348079,
+          47.7694987
+        ]
+      },
+      "id": "node/3897168810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018135285",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "10",
+        "addr:postcode": "5020",
+        "addr:street": "Itzlinger Hauptstraße",
+        "amenity": "pub",
+        "check_date:opening_hours": "2022-03-05",
+        "name": "Stammcafé",
+        "opening_hours": "Mo,Th-Sa 10:00-22:00, Su,PH 15:00-22:00",
+        "operator": "Sigi Strochal",
+        "smoking": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.044461,
+          47.8197744
+        ]
+      },
+      "id": "node/4018135285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5324779744",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "48",
+        "addr:postcode": "5020",
+        "addr:street": "Ignaz-Harrer-Straße",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Musa's Musikpub",
+        "opening_hours": "Mo-We, Su 10:00-02:00; Th-Sa 10:00-04:00",
+        "outdoor_seating": "yes",
+        "website": "http://musasmusik.pub/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.02748,
+          47.8116525
+        ]
+      },
+      "id": "node/5324779744"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5337978441",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "135C",
+        "addr:postcode": "5020",
+        "addr:street": "Kendlerstraße",
+        "amenity": "pub",
+        "name": "Kendlerstüberl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.004319,
+          47.779245
+        ]
+      },
+      "id": "node/5337978441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5359028491",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Siebenstädterstraße",
+        "amenity": "pub",
+        "indoor_seating": "yes",
+        "name": "Bosporus Elite",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0330096,
+          47.8115522
+        ]
+      },
+      "id": "node/5359028491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5436016869",
+        "amenity": "pub",
+        "name": "Toni's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0023575,
+          47.8082902
+        ]
+      },
+      "id": "node/5436016869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5512298876",
+        "amenity": "pub",
+        "check_date:opening_hours": "2024-12-17",
+        "indoor_seating": "yes",
+        "name": "Pelikan",
+        "opening_hours": "Mo,Tu,Th-Sa 09:00-23:00; Su 09:00-16:00",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0334765,
+          47.8112561
+        ]
+      },
+      "id": "node/5512298876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5737009421",
+        "amenity": "pub",
+        "check_date": "2023-07-13",
+        "cuisine": "irish",
+        "indoor_seating": "yes",
+        "name": "Dubliner",
+        "outdoor_seating": "no",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.048874,
+          47.7977195
+        ]
+      },
+      "id": "node/5737009421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9591878860",
+        "amenity": "pub",
+        "drink:wine": "yes",
+        "indoor_seating": "yes",
+        "name": "Mavini",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0266064,
+          47.8120024
+        ]
+      },
+      "id": "node/9591878860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9769786745",
+        "amenity": "pub",
+        "name": "Seppl's Grenzbeisl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9978689,
+          47.8338652
+        ]
+      },
+      "id": "node/9769786745"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11266326556",
+        "amenity": "pub",
+        "check_date:opening_hours": "2023-11-07",
+        "indoor_seating": "yes",
+        "name": "Bert's",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "payment:cash": "only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0199509,
+          47.823221
+        ]
+      },
+      "id": "node/11266326556"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12387775504",
+        "amenity": "pub",
+        "name": "Struberstüberl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0268591,
+          47.8084689
+        ]
+      },
+      "id": "node/12387775504"
+    }
+  ]
+}

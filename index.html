@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life in Salzburg</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-search@3.0.2/dist/leaflet-search.src.css" />
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+        
+        /* Map Title */
+        .map-title {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 1000;
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 12px 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            pointer-events: none;
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .map-title.dark-mode {
+            background: rgba(40, 44, 52, 0.9);
+            color: #f0f0f0;
+        }
+        
+        .title-emoji {
+            font-size: 1.2em;
+        }
+        
+        /* Info Icon Styles */
+        .info-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 1001;
+            background: rgba(255, 255, 255, 0.85);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .info-icon.dark-mode {
+            background: rgba(40, 44, 52, 0.9);
+            color: #f0f0f0;
+        }
+        
+        .info-icon:hover {
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .info-icon.dark-mode:hover {
+            background: rgba(50, 54, 62, 0.95);
+        }
+        
+        .info-modal {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            z-index: 1002;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            width: 300px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+        
+        .info-modal.dark-mode {
+            background: rgba(40, 44, 52, 0.95);
+            color: #f0f0f0;
+        }
+        
+        .info-modal h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        
+        .info-modal.dark-mode h3 {
+            color: #f0f0f0;
+        }
+        
+        .info-modal p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .info-modal ul {
+            padding-left: 20px;
+        }
+        
+        .info-modal li {
+            margin-bottom: 8px;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        
+        #map { 
+            height: 100vh; 
+            width: 100%; 
+            background: #f0f2f5;
+        }
+        
+        /* Control Container */
+        .control-container {
+            position: absolute;
+            top: 120px;
+            left: 10px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        /* Toggle Groups */
+        .toggle-group {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 5px;
+        }
+        
+        .toggle-group.dark-mode {
+            background: rgba(40, 44, 52, 0.9);
+            color: #f0f0f0;
+        }
+        
+        .toggle-group button {
+            margin: 0;
+            padding: 6px 12px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background: #f0f0f0;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .toggle-group.dark-mode button {
+            background: #3a3f4b;
+            color: #f0f0f0;
+        }
+        
+        .toggle-group button:hover {
+            background: #e0e0e0;
+        }
+        
+        .toggle-group.dark-mode button:hover {
+            background: #4e5465;
+        }
+        
+        .toggle-group button.active {
+            background: #0066cc;
+            color: white;
+        }
+        
+        .toggle-group.dark-mode button.active {
+            background: #1a73e8;
+        }
+        
+        /* Layer Control */
+        .leaflet-control-layers { 
+            background: rgba(255, 255, 255, 0.9);
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .leaflet-control-layers.dark-mode {
+            background: rgba(40, 44, 52, 0.9);
+            color: #f0f0f0;
+        }
+        
+        .leaflet-control-layers.dark-mode label {
+            color: #f0f0f0;
+        }
+        
+        .leaflet-control-layers-list span.fa {
+            margin-right: 10px;
+            width: 18px;
+            display: inline-block;
+            text-align: center;
+            color: inherit;
+        }
+        
+        .leaflet-control-layers label {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            cursor: pointer;
+            color: #333;
+        }
+        
+        /* Colored Layer Icons */
+        .layer-cafes { color: #e67e22; }
+        .layer-libraries { color: #3498db; }
+        .layer-restaurants { color: #e74c3c; }
+        .layer-parks { color: #27ae60; }
+        .layer-cinemas { color: #9b59b6; }
+        .layer-transport { color: #7f8c8d; }
+        .layer-dorms { color: #e74c3c; }
+        .layer-universities { color: #2c3e50; }
+        .layer-bars { color: #9b59b6; }
+        .layer-nightclubs { color: #f1c40f; }
+        .layer-pubs { color: #16a085; }
+        
+        /* Student Tips Panel with Scale Bar */
+        .bottom-panel-container {
+            position: absolute;
+            bottom: 20px;
+            left: 10px;
+            z-index: 1000;
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+        }
+        
+        .student-tips-panel {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            width: 280px;
+            height: 350px;
+            overflow-y: hidden;
+        }
+        
+        .student-tips-panel.dark-mode {
+            background: rgba(40, 44, 52, 0.9);
+            color: #f0f0f0;
+        }
+        
+        .tips-title {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        
+        .tips-title.dark-mode {
+            color: #f0f0f0;
+        }
+        
+        .tips-list {
+            padding-left: 20px;
+            margin: 0;
+            list-style-type: none;
+        }
+        
+        .tips-list li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-size: 14px;
+        }
+        
+        .tips-list.dark-mode li {
+            color: #f0f0f0;
+        }
+        
+        /* Scale Bar Positioning */
+        .leaflet-control-scale {
+            background: rgba(255, 255, 255, 0.9) !important;
+            padding: 5px !important;
+            border-radius: 5px !important;
+            margin-bottom: 0 !important;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+        }
+        
+        .leaflet-control-scale.dark-mode {
+            background: rgba(40, 44, 52, 0.9) !important;
+            color: #f0f0f0 !important;
+        }
+        
+        /* Poll Button */
+        .poll-button {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            z-index: 1000;
+            background: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            font-weight: 500;
+        }
+        
+        .poll-button.dark-mode {
+            background: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <!-- Map Title -->
+    <div class="map-title">
+        <span class="title-emoji">🎓</span>
+        Student Life in Salzburg
+        <span class="title-emoji">📚</span>
+    </div>
+    
+    <!-- Info Icon and Modal -->
+    <div class="info-icon" id="infoIcon">i</div>
+    <div class="info-modal" id="infoModal">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h3>About This Map</h3>
+        <p>This interactive map shows key locations for students in Salzburg, Austria.</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+            <li>Toggle between day and night modes</li>
+            <li>Switch between English and German</li>
+            <li>Filter different types of locations</li>
+            <li>Search for specific places</li>
+            <li>View student tips for each location</li>
+        </ul>
+        <p><strong>Data Sources:</strong></p>
+        <p>The map data is collected from Over Pass Turbo and student contributions.</p>
+        <p>Author: Laura Lushka, June 2025</p>
+    </div>
+    
+    <div id="map"></div>
+    
+    <!-- Control Container -->
+    <div class="control-container">
+        <div class="toggle-group">
+            <button id="dayModeBtn" class="active">☀️ <span class="day-night-text">Day</span></button>
+            <button id="nightModeBtn">🌙 <span class="day-night-text">Night</span></button>
+        </div>
+        
+        <div class="toggle-group">
+            <button id="enBtn" class="active">EN</button>
+            <button id="deBtn">DE</button>
+        </div>
+    </div>
+    
+    <!-- Student Tips Panel with Scale Bar -->
+    <div class="bottom-panel-container">
+        <div class="student-tips-panel">
+            <h3 class="tips-title">Student Tips</h3>
+            <ul class="tips-list">
+                <li>🏛️ Mensa - €4.50 student lunches (best budget option)</li>
+                <li>☕ Fingerlos Café - Cheap coffee refills (free WiFi)</li>
+                <li>🌳 Unipark - Free outdoor study space (great in summer)</li>
+                <li>🍺 Ludwig's Pub - Happy hour 5-7pm (student discounts)</li>
+                <li>🏠 Student dorms - Apply early through STV for best options</li>
+                <li>📅 Student events - Check PLUS Online for weekly activities</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Poll Button -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfWZFrcqaDQ234YfLbrLd95oTxDdnKBgqV0y2E_s2JmzSnEDA/viewform?usp=sharing&ouid=115851849570479069129" 
+       target="_blank" 
+       class="poll-button">
+       Vote for Best Student Café
+    </a>
+
+    <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-search@3.0.2/dist/leaflet-search.src.js"></script>
+    
+    <script>
+        // Initialize map centered on Salzburg
+        const map = L.map('map').setView([47.8095, 13.0550], 14);
+
+        // Add scale bar next to student tips panel
+        const scale = L.control.scale({
+            position: 'bottomleft',
+            metric: true,
+            imperial: false
+        }).addTo(map);
+
+        // Move scale control to be next to student tips panel
+        const scaleElement = document.querySelector('.leaflet-control-scale');
+        document.querySelector('.bottom-panel-container').appendChild(scaleElement);
+
+        // Translations
+        const translations = {
+            en: {
+                title: "🎓 Student Life in Salzburg 📚",
+                day: "Day",
+                night: "Night",
+                layers: {
+                    cafes: "<i class='fas fa-coffee layer-cafes'></i> Cafés",
+                    libraries: "<i class='fas fa-book layer-libraries'></i> Libraries",
+                    restaurants: "<i class='fas fa-utensils layer-restaurants'></i> Restaurants",
+                    parks: "<i class='fas fa-tree layer-parks'></i> Parks",
+                    cinemas: "<i class='fas fa-film layer-cinemas'></i> Cinemas",
+                    transport: "<i class='fas fa-bus layer-transport'></i> Public Transport",
+                    dorms: "<i class='fas fa-home layer-dorms'></i> Student Dorms",
+                    universities: "<i class='fas fa-university layer-universities'></i> Universities",
+                    bars: "<i class='fas fa-glass-martini-alt layer-bars'></i> Bars",
+                    nightclubs: "<i class='fas fa-music layer-nightclubs'></i> Nightclubs",
+                    pubs: "<i class='fas fa-beer layer-pubs'></i> Pubs"
+                },
+                searchPlaceholder: "Search locations...",
+                tipsTitle: "Student Tips",
+                tips: [
+                    "🏛️ Mensa - €4.50 student lunches (best budget option)",
+                    "☕ Fingerlos Café - Cheap coffee refills (free WiFi)",
+                    "🌳 Unipark - Free outdoor study space (great in summer)",
+                    "🍺 Ludwig's Pub - Happy hour 5-7pm (student discounts)",
+                    "🏠 Student dorms - Apply early through STV for best options",
+                    "📅 Student events - Check PLUS Online for weekly activities"
+                ],
+                pollButton: "Vote for Best Student Café",
+                infoModal: {
+                    title: "About This Map",
+                    description: "This interactive map shows key locations for students in Salzburg, Austria.",
+                    features: [
+                        "Toggle between day and night modes",
+                        "Switch between English and German",
+                        "Filter different types of locations",
+                        "Search for specific places",
+                        "View student tips for each location"
+                    ],
+                    dataSources: "The map data is collected from Over Pass Turbo and student contributions.",
+                    lastUpdated: "Author: Laura Lushka, June 2025"
+                }
+            },
+            de: {
+                title: "🎓 Studentenleben in Salzburg 📚",
+                day: "Tag",
+                night: "Nacht",
+                layers: {
+                    cafes: "<i class='fas fa-coffee layer-cafes'></i> Cafés",
+                    libraries: "<i class='fas fa-book layer-libraries'></i> Bibliotheken",
+                    restaurants: "<i class='fas fa-utensils layer-restaurants'></i> Restaurants",
+                    parks: "<i class='fas fa-tree layer-parks'></i> Parks",
+                    cinemas: "<i class='fas fa-film layer-cinemas'></i> Kinos",
+                    transport: "<i class='fas fa-bus layer-transport'></i> Öffentlicher Verkehr",
+                    dorms: "<i class='fas fa-home layer-dorms'></i> Studentenwohnheime",
+                    universities: "<i class='fas fa-university layer-universities'></i> Universitäten",
+                    bars: "<i class='fas fa-glass-martini-alt layer-bars'></i> Bars",
+                    nightclubs: "<i class='fas fa-music layer-nightclubs'></i> Nachtclubs",
+                    pubs: "<i class='fas fa-beer layer-pubs'></i> Kneipen"
+                },
+                searchPlaceholder: "Orte suchen...",
+                tipsTitle: "Studententipps",
+                tips: [
+                    "🏛️ Mensa - €4,50 Studentenmenüs (günstigste Option)",
+                    "☕ Café Fingerlos - Günstige Kaffee-Nachfüllungen (kostenloses WLAN)",
+                    "🌳 Unipark - Kostenloser Lernplatz im Freien (ideal im Sommer)",
+                    "🍺 Ludwig's Pub - Happy Hour 17-19 Uhr (Studentenrabatte)",
+                    "🏠 Studentenwohnheime - Früh über STV bewerben für beste Optionen",
+                    "📅 Studentenveranstaltungen - PLUS Online für wöchentliche Aktivitäten"
+                ],
+                pollButton: "Beste Studentencafés wählen",
+                infoModal: {
+                    title: "Über diese Karte",
+                    description: "Diese interaktive Karte zeigt wichtige Orte für Studenten in Salzburg, Österreich.",
+                    features: [
+                        "Wechsel zwischen Tag- und Nachtmodus",
+                        "Umschalten zwischen Englisch und Deutsch",
+                        "Filtern verschiedener Ortstypen",
+                        "Suche nach bestimmten Orten",
+                        "Anzeige von Studententipps für jeden Ort"
+                    ],
+                    dataSources: "Die Kartendaten stammen aus verschiedenen offenen Quellen und Studentenbeiträgen.",
+                    lastUpdated: "Letzte Aktualisierung: Juni 2023"
+                }
+            }
+        };
+        
+        let currentLang = 'en';
+
+        // Basemaps
+        const dayBasemap = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap, © CartoDB'
+        });
+
+        const nightBasemap = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap, © CartoDB'
+        });
+
+        dayBasemap.addTo(map);
+
+        // Custom icons
+        const icons = {
+            cafe: L.divIcon({ html: '<i class="fas fa-coffee" style="color:#e67e22"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            library: L.divIcon({ html: '<i class="fas fa-book" style="color:#3498db"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            restaurant: L.divIcon({ html: '<i class="fas fa-utensils" style="color:#e74c3c"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            bar: L.divIcon({ html: '<i class="fas fa-glass-martini-alt" style="color:#9b59b6"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            nightclub: L.divIcon({ html: '<i class="fas fa-music" style="color:#f1c40f"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            pub: L.divIcon({ html: '<i class="fas fa-beer" style="color:#16a085"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            cinema: L.divIcon({ html: '<i class="fas fa-film" style="color:#c0392b"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            park: L.divIcon({ html: '<i class="fas fa-tree" style="color:#27ae60"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            transport: L.divIcon({ html: '<i class="fas fa-bus" style="color:#7f8c8d"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            dorm: L.divIcon({ html: '<i class="fas fa-home" style="color:#e74c3c"></i>', className: 'custom-icon', iconSize: [24, 24] }),
+            university: L.divIcon({ html: '<i class="fas fa-university" style="color:#2c3e50"></i>', className: 'custom-icon', iconSize: [24, 24] })
+        };
+
+        // Layer groups for all categories
+        const layers = {
+            cafes: L.layerGroup(),
+            libraries: L.layerGroup(),
+            restaurants: L.layerGroup(),
+            parks: L.layerGroup(),
+            cinemas: L.layerGroup(),
+            transport: L.layerGroup(),
+            dorms: L.layerGroup(),
+            universities: L.layerGroup(),
+            bars: L.layerGroup(),
+            nightclubs: L.layerGroup(),
+            pubs: L.layerGroup()
+        };
+
+        // Function to convert ALL features to points (force icons)
+        function getLatLng(feature) {
+            if (feature.geometry.type === 'Point') {
+                return L.latLng(feature.geometry.coordinates[1], feature.geometry.coordinates[0]);
+            } else {
+                const centroid = turf.centroid(feature);
+                return L.latLng(centroid.geometry.coordinates[1], centroid.geometry.coordinates[0]);
+            }
+        }
+
+        // Function to load GeoJSON data and FORCE icons for ALL features
+        function loadGeoJSON(layerName, fileName, icon, propertiesToShow = ['name']) {
+            fetch(`data/${fileName}.geojson`)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data || !data.features) {
+                        console.error(`Invalid GeoJSON data for ${fileName}`);
+                        return;
+                    }
+
+                    data.features.forEach(feature => {
+                        const point = getLatLng(feature);
+                        const marker = L.marker(point, { icon });
+                        
+                        // Store original feature for search
+                        marker.feature = feature;
+                        
+                        let popupContent = `<b>${feature.properties.name || layerName}</b><br>`;
+                        propertiesToShow.forEach(prop => {
+                            if (feature.properties[prop] && prop !== 'name') {
+                                popupContent += `<b>${prop}:</b> ${feature.properties[prop]}<br>`;
+                            }
+                        });
+                        
+                        marker.bindPopup(popupContent);
+                        marker.addTo(layers[layerName]);
+                    });
+                })
+                .catch(err => console.error(`Error loading ${fileName}:`, err));
+        }
+
+        // Load all GeoJSON data (but don't add to map yet)
+        loadGeoJSON('cafes', 'cafes', icons.cafe, ['name', 'opening_hours']);
+        loadGeoJSON('libraries', 'libraries', icons.library, ['name', 'opening_hours']);
+        loadGeoJSON('restaurants', 'restaurants', icons.restaurant, ['name', 'cuisine']);
+        loadGeoJSON('bars', 'bars', icons.bar, ['name', 'opening_hours']);
+        loadGeoJSON('nightclubs', 'nightclubs', icons.nightclub, ['name', 'music']);
+        loadGeoJSON('pubs', 'pub', icons.pub, ['name', 'happy_hour']);
+        loadGeoJSON('cinemas', 'cinema', icons.cinema, ['name', 'operator']);
+        loadGeoJSON('parks', 'parks', icons.park, ['name', 'leisure']);
+        loadGeoJSON('transport', 'Public.Transport.All', icons.transport, ['name', 'public_transport']);
+        loadGeoJSON('dorms', 'student_dorms', icons.dorm, ['name', 'address']);
+        loadGeoJSON('universities', 'university', icons.university, ['name', 'website']);
+
+        // Initialize search control
+        const searchControl = new L.Control.Search({
+            position: 'topright',
+            layer: L.layerGroup(Object.values(layers)),
+            propertyName: 'name',
+            marker: false,
+            moveToLocation: function(latlng, title, map) {
+                map.setView(latlng, 16);
+            }
+        });
+        searchControl.on('search:locationfound', function(e) {
+            e.layer.openPopup();
+        });
+        map.addControl(searchControl);
+
+        // Toggle dark mode classes
+        function toggleDarkMode(isDark) {
+            const elements = [
+                document.querySelector('.map-title'),
+                document.querySelector('.student-tips-panel'),
+                document.querySelector('.tips-title'),
+                document.querySelector('.tips-list'),
+                ...document.querySelectorAll('.toggle-group'),
+                document.querySelector('.leaflet-control-layers'),
+                document.querySelector('.poll-button'),
+                document.querySelector('.info-icon'),
+                document.querySelector('.info-modal'),
+                document.querySelector('.leaflet-control-scale')
+            ];
+            
+            elements.forEach(el => {
+                if (el) {
+                    if (isDark) {
+                        el.classList.add('dark-mode');
+                    } else {
+                        el.classList.remove('dark-mode');
+                    }
+                }
+            });
+        }
+
+        // Update UI language
+        function updateLanguage(lang) {
+            currentLang = lang;
+            
+            // Update title
+            const titleText = translations[lang].title.split(' ').slice(1, -1).join(' ');
+            document.querySelector('.map-title').innerHTML = `
+                <span class="title-emoji">🎓</span>
+                ${titleText}
+                <span class="title-emoji">📚</span>
+            `;
+            
+            // Update day/night toggle
+            document.querySelector('.day-night-text').textContent = translations[lang].day;
+            document.querySelectorAll('.day-night-text')[1].textContent = translations[lang].night;
+            
+            // Update search placeholder
+            searchControl.getContainer().querySelector('input').placeholder = translations[lang].searchPlaceholder;
+            
+            // Update layer control
+            if (layerControl) {
+                map.removeControl(layerControl);
+            }
+            
+            const translatedOverlays = {};
+            Object.keys(translations[lang].layers).forEach(key => {
+                translatedOverlays[translations[lang].layers[key]] = layers[key];
+            });
+            
+            layerControl = L.control.layers(null, translatedOverlays, {
+                collapsed: false,
+                position: 'topright'
+            }).addTo(map);
+            
+            // Update active language button
+            document.querySelectorAll('.language-toggle button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(lang + 'Btn').classList.add('active');
+            
+            // Update tips panel
+            document.querySelector('.tips-title').textContent = translations[lang].tipsTitle;
+            const tipsList = document.querySelector('.tips-list');
+            tipsList.innerHTML = '';
+            translations[lang].tips.forEach(tip => {
+                const li = document.createElement('li');
+                li.textContent = tip;
+                tipsList.appendChild(li);
+            });
+            
+            // Update poll button
+            document.querySelector('.poll-button').textContent = translations[lang].pollButton;
+            
+            // Update info modal
+            const modal = translations[lang].infoModal;
+            const infoModal = document.getElementById('infoModal');
+            infoModal.innerHTML = `
+                <span class="close-modal" id="closeModal">&times;</span>
+                <h3>${modal.title}</h3>
+                <p>${modal.description}</p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    ${modal.features.map(feature => `<li>${feature}</li>`).join('')}
+                </ul>
+                <p><strong>Data Sources:</strong></p>
+                <p>${modal.dataSources}</p>
+                <p>${modal.lastUpdated}</p>
+            `;
+            
+            // Reattach close event
+            document.getElementById('closeModal').addEventListener('click', () => {
+                infoModal.style.display = 'none';
+            });
+        }
+
+        // Create initial layer control (all layers OFF by default)
+        let layerControl = L.control.layers(null, {
+            [translations[currentLang].layers.cafes]: layers.cafes,
+            [translations[currentLang].layers.libraries]: layers.libraries,
+            [translations[currentLang].layers.restaurants]: layers.restaurants,
+            [translations[currentLang].layers.parks]: layers.parks,
+            [translations[currentLang].layers.cinemas]: layers.cinemas,
+            [translations[currentLang].layers.transport]: layers.transport,
+            [translations[currentLang].layers.dorms]: layers.dorms,
+            [translations[currentLang].layers.universities]: layers.universities,
+            [translations[currentLang].layers.bars]: layers.bars,
+            [translations[currentLang].layers.nightclubs]: layers.nightclubs,
+            [translations[currentLang].layers.pubs]: layers.pubs
+        }, {
+            collapsed: false,
+            position: 'topright'
+        }).addTo(map);
+
+        // Day/Night mode toggle functionality
+        const dayModeBtn = document.getElementById('dayModeBtn');
+        const nightModeBtn = document.getElementById('nightModeBtn');
+
+        function activateDayMode() {
+            // Switch basemap
+            map.removeLayer(nightBasemap);
+            dayBasemap.addTo(map);
+            
+            // Hide ALL layers (they must be enabled manually)
+            Object.values(layers).forEach(layer => layer.removeFrom(map));
+            
+            // Update UI
+            toggleDarkMode(false);
+            dayModeBtn.classList.add('active');
+            nightModeBtn.classList.remove('active');
+        }
+
+        function activateNightMode() {
+            // Switch basemap
+            map.removeLayer(dayBasemap);
+            nightBasemap.addTo(map);
+            
+            // Hide all layers first
+            Object.values(layers).forEach(layer => layer.removeFrom(map));
+            
+            // Then show ONLY nightclubs and pubs
+            layers.nightclubs.addTo(map);
+            layers.pubs.addTo(map);
+            
+            // Update UI
+            toggleDarkMode(true);
+            dayModeBtn.classList.remove('active');
+            nightModeBtn.classList.add('active');
+        }
+
+        // Language toggle functionality
+        document.getElementById('enBtn').addEventListener('click', () => {
+            updateLanguage('en');
+            document.getElementById('enBtn').classList.add('active');
+            document.getElementById('deBtn').classList.remove('active');
+        });
+        document.getElementById('deBtn').addEventListener('click', () => {
+            updateLanguage('de');
+            document.getElementById('deBtn').classList.add('active');
+            document.getElementById('enBtn').classList.remove('active');
+        });
+
+        // Info icon functionality
+        const infoIcon = document.getElementById('infoIcon');
+        const infoModal = document.getElementById('infoModal');
+        
+        infoIcon.addEventListener('click', () => {
+            infoModal.style.display = infoModal.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        document.getElementById('closeModal').addEventListener('click', () => {
+            infoModal.style.display = 'none';
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === infoModal) {
+                infoModal.style.display = 'none';
+            }
+        });
+
+        // Initialize with day mode (ALL LAYERS OFF)
+        activateDayMode();
+        updateLanguage('en');
+        
+        // Add event listeners for day/night toggle
+        dayModeBtn.addEventListener('click', activateDayMode);
+        nightModeBtn.addEventListener('click', activateNightMode);
+    </script>
+</body>
+</html>

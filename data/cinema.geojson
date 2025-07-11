@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-16T18:15:14Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/690430826",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Giselakai",
+        "amenity": "cinema",
+        "name": "Das Kino - Salzburger Filmkulturzentrum",
+        "opening_hours": "\"nach Kinoprogramm, Kassa ab 9.30 geöffnet\"",
+        "website": "https://www.daskino.at/",
+        "wheelchair": "limited",
+        "wikidata": "Q38082907"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0456961,
+          47.8012806
+        ]
+      },
+      "id": "node/690430826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4698071455",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "33",
+        "addr:postcode": "5020",
+        "addr:street": "Kaigasse",
+        "amenity": "cinema",
+        "description": "Programm-Kino als Teil des Hotels. Es wird auch für Veranstaltungen genutzt",
+        "name": "Altstadthotel Kasererbraeu Mozartkino GmbH",
+        "website": "https://www.mozartkino.at/",
+        "wikidata": "Q21035794",
+        "wikipedia": "de:Mozartkino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0492518,
+          47.7969832
+        ]
+      },
+      "id": "node/4698071455"
+    }
+  ]
+}

@@ -1,0 +1,1759 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-06-16T17:46:30Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/68301318",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "2a",
+        "addr:postcode": "5020",
+        "addr:street": "Imbergstraße",
+        "amenity": "bar",
+        "building": "retail",
+        "check_date": "2025-06-03",
+        "check_date:currency:XBT": "2025-06-03",
+        "contact:instagram": "monkeys_salzburg",
+        "cuisine": "streetfood",
+        "currency:XBT": "yes",
+        "email": "office@monkeys-salzburg.at",
+        "name": "Monkeys",
+        "opening_hours": "Su-Th 11:30-01:00; Fr-Sa 11:30-02:00",
+        "payment:lightning": "yes",
+        "payment:lightning_contactless": "yes",
+        "payment:onchain": "yes",
+        "survey:date": "2025-02-26",
+        "website": "https://www.monkeys-salzburg.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0480186,
+              47.8006836
+            ],
+            [
+              13.04802,
+              47.8006722
+            ],
+            [
+              13.048006,
+              47.8006092
+            ],
+            [
+              13.0480036,
+              47.8005947
+            ],
+            [
+              13.0481552,
+              47.8005579
+            ],
+            [
+              13.0481619,
+              47.8005749
+            ],
+            [
+              13.0481783,
+              47.8006285
+            ],
+            [
+              13.0481822,
+              47.8006604
+            ],
+            [
+              13.0481351,
+              47.8006608
+            ],
+            [
+              13.0481343,
+              47.8006839
+            ],
+            [
+              13.0480186,
+              47.8006836
+            ]
+          ]
+        ]
+      },
+      "id": "way/68301318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/68301326",
+        "amenity": "bar",
+        "building": "yes",
+        "check_date": "2023-07-04",
+        "indoor_seating": "yes",
+        "name": "Watzmann",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0468281,
+              47.8010777
+            ],
+            [
+              13.0468345,
+              47.8010067
+            ],
+            [
+              13.0469179,
+              47.8010101
+            ],
+            [
+              13.0469115,
+              47.801081
+            ],
+            [
+              13.0468281,
+              47.8010777
+            ]
+          ]
+        ]
+      },
+      "id": "way/68301326"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97159663",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Dr.-Franz-Rehrl-Platz",
+        "amenity": "bar",
+        "building": "yes",
+        "name": "Die Bar",
+        "opening_hours": "Mo - Sa 19:00 - 3:00",
+        "phone": "+43 (0)662 / 64 27 59",
+        "smoking": "yes",
+        "website": "http://www.die-bar.net/"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              13.0544101,
+              47.7996182
+            ],
+            [
+              13.0545103,
+              47.7995768
+            ],
+            [
+              13.0546122,
+              47.7996881
+            ],
+            [
+              13.0545121,
+              47.7997295
+            ],
+            [
+              13.0544101,
+              47.7996182
+            ]
+          ]
+        ]
+      },
+      "id": "way/97159663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/268243641",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "10",
+        "addr:postcode": "5020",
+        "addr:street": "Schwarzstraße",
+        "amenity": "bar",
+        "description": "internationale Biersorten",
+        "name": "Beer Lounge",
+        "opening_hours": "Mo-Sa 17:00-02:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0441689,
+          47.8020031
+        ]
+      },
+      "id": "node/268243641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/689239062",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "19",
+        "addr:postcode": "5020",
+        "addr:street": "Vogelweiderstraße",
+        "amenity": "bar",
+        "name": "Rugia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0551243,
+          47.8084406
+        ]
+      },
+      "id": "node/689239062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/694203217",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "2",
+        "addr:postcode": "5020",
+        "addr:street": "Platzl",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Wein & Co",
+        "opening_hours": "Mo-Sa 10:00-24:00; Su 11:00-24:00",
+        "outdoor_seating": "yes",
+        "shop": "wine",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.04509,
+          47.8018082
+        ]
+      },
+      "id": "node/694203217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/795718092",
+        "amenity": "bar",
+        "description": "Mozart Distillerie",
+        "name": "Center for Bar Culture"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0565199,
+          47.8260657
+        ]
+      },
+      "id": "node/795718092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/814204003",
+        "amenity": "bar",
+        "check_date": "2023-08-10",
+        "indoor_seating": "yes",
+        "name": "Citybeats",
+        "opening_hours": "Th 22:00-04:00, Fr,Sa 22:00-05:00",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0409155,
+          47.8007179
+        ]
+      },
+      "id": "node/814204003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/814235366",
+        "amenity": "bar",
+        "name": "Half Moon",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0393259,
+          47.8008127
+        ]
+      },
+      "id": "node/814235366"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/814235412",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Soda Club",
+        "opening_hours": "Fr,Sa 22:00-05:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0388941,
+          47.8012368
+        ]
+      },
+      "id": "node/814235412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/814276657",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "24",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "bar",
+        "email": "info@luxclub.at",
+        "indoor_seating": "yes",
+        "name": "Lux Club Salzburg",
+        "opening_hours": "We-Sa 20:00-04:00",
+        "operator": "Ranzenberger Pubbetriebe GmbH",
+        "outdoor_seating": "no",
+        "phone": "+436764832501",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0465606,
+          47.7999679
+        ]
+      },
+      "id": "node/814276657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827243598",
+        "amenity": "bar",
+        "check_date:opening_hours": "2023-03-17",
+        "indoor_seating": "yes",
+        "name": "Yasmin",
+        "opening_hours": "Mo-Su 21:00-04:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0453622,
+          47.8036237
+        ]
+      },
+      "id": "node/827243598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827296317",
+        "addr:housenumber": "54",
+        "addr:street": "Linzer Gasse",
+        "amenity": "bar",
+        "cuisine": "greek",
+        "name": "Nachbar",
+        "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-18:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.047701,
+          47.8038916
+        ]
+      },
+      "id": "node/827296317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827297310",
+        "amenity": "bar",
+        "name": "Murat",
+        "opening_hours": "Mo-Fr 10:00-21:00; Sa 10:00-18:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0476206,
+          47.8038367
+        ]
+      },
+      "id": "node/827297310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827310382",
+        "addr:housenumber": "5",
+        "addr:postcode": "5020",
+        "addr:street": "Steingasse",
+        "amenity": "bar",
+        "cuisine": "fish;seafood",
+        "name": "Shrimps Bar & Restaurant",
+        "opening_hours": "Mo-Su 18:00-24:00",
+        "phone": "+43 662 874484",
+        "website": "http://shrimps.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0455718,
+          47.8014975
+        ]
+      },
+      "id": "node/827310382"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827324889",
+        "amenity": "bar",
+        "check_date": "2023-07-02",
+        "indoor_seating": "yes",
+        "name": "Times",
+        "opening_hours": "We-Su 18:00-02:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.048281,
+          47.805739
+        ]
+      },
+      "id": "node/827324889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/827328996",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Bellinis",
+        "opening_hours": "Mo-Sa 08:00-23:00; Su 11:00-19:30",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0423112,
+          47.8060434
+        ]
+      },
+      "id": "node/827328996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1337161463",
+        "amenity": "bar",
+        "layer": "2",
+        "name": "Threesixty",
+        "website": "https://www.hangar-7.com/de/day-night/threesixty-bar/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0073461,
+          47.7937427
+        ]
+      },
+      "id": "node/1337161463"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1363264067",
+        "amenity": "bar",
+        "name": "Müllner Stube",
+        "opening_hours": "Mo,We-Sa 19:00-02:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0347948,
+          47.8062401
+        ]
+      },
+      "id": "node/1363264067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1447945870",
+        "amenity": "bar",
+        "name": "Sudwerk",
+        "opening_hours": "Mo-Sa 17:00-04:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0517498,
+          47.8066449
+        ]
+      },
+      "id": "node/1447945870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1606344883",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housename": "Zum Stammtisch",
+        "addr:housenumber": "8",
+        "addr:postcode": "5020",
+        "addr:street": "Gorlicegasse",
+        "amenity": "bar",
+        "at_bev:addr_date": "2018-10-01",
+        "name": "Xela",
+        "opening_hours": "Mo,Tu,Th 17:00-23:00; Fr,Sa 17:00-02:00, Su 14:00-20:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0428867,
+          47.8243879
+        ]
+      },
+      "id": "node/1606344883"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1721577231",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "7",
+        "addr:postcode": "5020",
+        "addr:street": "Krotachgasse",
+        "amenity": "bar",
+        "name": "Jambo World Music Cafe",
+        "website": "http://www.jambo-salzburg.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0496253,
+          47.7974195
+        ]
+      },
+      "id": "node/1721577231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1778956814",
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-08-26",
+        "indoor_seating": "yes",
+        "name": "Salzach-​Insel-​Bar",
+        "opening_hours": "Mar,Nov-Dec Fr,Sa 18:00+; Apr,Oct Th-Sa 18:00+; May,Sep We-Sa 18:00+; Jun Tu-Sa 18:00+; Jul-Aug Tu-Su 18:00+",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0416023,
+          47.8016034
+        ]
+      },
+      "id": "node/1778956814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1793672364",
+        "amenity": "bar",
+        "layer": "2",
+        "name": "Mayday",
+        "website": "https://www.hangar-7.com/de/day-night/mayday-bar/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.007899,
+          47.7936354
+        ]
+      },
+      "id": "node/1793672364"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1874505835",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "3",
+        "addr:postcode": "5020",
+        "addr:street": "Mostwastlweg",
+        "amenity": "bar",
+        "name": "Veranda",
+        "phone": "+43 (0)662 823572",
+        "website": "https://www.mostwastl.com/bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0341398,
+          47.7544586
+        ]
+      },
+      "id": "node/1874505835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1884958815",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Elisabethstraße",
+        "alt_name": "Jazzit Musik Club",
+        "amenity": "bar",
+        "name": "Jazzit",
+        "phone": "+43 662 883264",
+        "website": "http://www.jazzit.at",
+        "wheelchair": "limited",
+        "wheelchair:description": "Eingang Rückseite verwenden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.041664,
+          47.812134
+        ]
+      },
+      "id": "node/1884958815"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1941620443",
+        "amenity": "bar",
+        "check_date:opening_hours": "2023-03-17",
+        "name": "Havana Cocktail Bar",
+        "opening_hours:signed": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0452776,
+          47.8031315
+        ]
+      },
+      "id": "node/1941620443"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1986986616",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "4",
+        "addr:postcode": "5020",
+        "addr:street": "Sigmund-Haffner-Gasse",
+        "amenity": "bar",
+        "cuisine": "regional",
+        "diet:vegetarian": "no",
+        "name": "SoHo Bar",
+        "phone": "+43 (0)662-844020"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0444848,
+          47.7997474
+        ]
+      },
+      "id": "node/1986986616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2066047942",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "18",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Segabar Rudolfskai",
+        "outdoor_seating": "no",
+        "toilets:wheelchair": "no",
+        "website": "https://www.segabar.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.046203,
+          47.800041
+        ]
+      },
+      "id": "node/2066047942"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2096367224",
+        "addr:housenumber": "42",
+        "addr:postcode": "5023",
+        "addr:street": "Linzer Bundesstraße",
+        "amenity": "bar",
+        "name": "Bar Chalet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0690243,
+          47.8146342
+        ]
+      },
+      "id": "node/2096367224"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2135867286",
+        "addr:housenumber": "9",
+        "addr:street": "Linzer Gasse",
+        "amenity": "bar",
+        "layer": "-1",
+        "name": "L9",
+        "phone": "+43-662-88 9 65",
+        "website": "https://www.gablerbrau.at/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0455389,
+          47.8024948
+        ]
+      },
+      "id": "node/2135867286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2377509445",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "22",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolfskai",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Riverside",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0464772,
+          47.7999919
+        ]
+      },
+      "id": "node/2377509445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2522319543",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Sega-Bar",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0388413,
+          47.8013244
+        ]
+      },
+      "id": "node/2522319543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3250407810",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "50",
+        "addr:postcode": "5020",
+        "addr:street": "Sterneckstraße",
+        "amenity": "bar",
+        "name": "s'Sterneckerl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0617657,
+          47.8094495
+        ]
+      },
+      "id": "node/3250407810"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3468969068",
+        "amenity": "bar",
+        "name": "Gineria",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0456026,
+          47.801295
+        ]
+      },
+      "id": "node/3468969068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3867022919",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "34",
+        "addr:postcode": "5020",
+        "addr:street": "Getreidegasse",
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-12-19",
+        "indoor_seating": "yes",
+        "name": "bollicine",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0415703,
+          47.8001545
+        ]
+      },
+      "id": "node/3867022919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3932294371",
+        "addr:housenumber": "15",
+        "addr:postcode": "5020",
+        "addr:street": "Giselakai",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Chez Roland",
+        "opening_hours": "Mo,Tu,Th-Sa 19:30-03:00; We,Su off",
+        "outdoor_seating": "no",
+        "phone": "+43 662 874335",
+        "website": "http://chez-roland.com",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0465092,
+          47.800999
+        ]
+      },
+      "id": "node/3932294371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3993664333",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0382259,
+          47.8022436
+        ]
+      },
+      "id": "node/3993664333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4386354489",
+        "amenity": "bar",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Eden Cafe Skybar",
+        "opening_hours": "Mi-Sa 10:00-22:00",
+        "payment:cash": "only",
+        "toilets:wheelchair": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0544524,
+          47.794578
+        ]
+      },
+      "id": "node/4386354489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4726284751",
+        "amenity": "bar",
+        "check_date:opening_hours": "2022-12-27",
+        "name": "Piccadilly Shishabar",
+        "opening_hours:signed": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0486736,
+          47.8062314
+        ]
+      },
+      "id": "node/4726284751"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4742175090",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "4",
+        "addr:postcode": "5020",
+        "addr:street": "Franz-Josef-Straße",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Academy Bar",
+        "opening_hours": "Mo-Sa 16:00-24:00",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://www.academy-salzburg.at/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0430761,
+          47.8068905
+        ]
+      },
+      "id": "node/4742175090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4757515743",
+        "amenity": "bar",
+        "name": "HeiMad-Eck",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0490169,
+          47.7970642
+        ]
+      },
+      "id": "node/4757515743"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4769445925",
+        "addr:housenumber": "8",
+        "addr:street": "Neutorstraße",
+        "amenity": "bar",
+        "cuisine": "tea;coffee_shop;german",
+        "name": "dein treff"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0370632,
+          47.7976589
+        ]
+      },
+      "id": "node/4769445925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5262380519",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "The Cube",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0466472,
+          47.7999404
+        ]
+      },
+      "id": "node/5262380519"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5329242126",
+        "amenity": "bar",
+        "name": "wunderBAR",
+        "opening_hours": "Mo-Su 17:00-04:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0183798,
+          47.8040813
+        ]
+      },
+      "id": "node/5329242126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5341844009",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Gstättengasse",
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-04-15",
+        "indoor_seating": "yes",
+        "name": "Keboss Lounge",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0389771,
+          47.8008169
+        ]
+      },
+      "id": "node/5341844009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5343986525",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Paracelsusstraße",
+        "amenity": "bar",
+        "at_bev:addr_date": "2020-04-01",
+        "check_date": "2024-10-30",
+        "contact:facebook": "https://www.facebook.com/1734769346755063",
+        "email": "customer@dark-eagle.at",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "lgbtq:cruising": "yes",
+        "lgbtq:men": "only",
+        "name": "Dark Eagle",
+        "opening_hours": "Mo-Tu,Su off; We-Th 20:00-24:00; Fr-Sa 20:30-02:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+43 662 230214",
+        "website": "https://www.dark-eagle.at/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0477043,
+          47.8087031
+        ]
+      },
+      "id": "node/5343986525"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5344856070",
+        "amenity": "bar",
+        "name": "Sketch",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0437434,
+          47.8031577
+        ]
+      },
+      "id": "node/5344856070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5373381262",
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-04-12",
+        "indoor_seating": "yes",
+        "name": "Einser",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0403562,
+          47.7996775
+        ]
+      },
+      "id": "node/5373381262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5373539580",
+        "amenity": "bar",
+        "name": "Reblaus Wein & Bier Schenke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0448637,
+          47.8038443
+        ]
+      },
+      "id": "node/5373539580"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5373736775",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "5A",
+        "addr:postcode": "5020",
+        "addr:street": "Innsbrucker Bundesstraße",
+        "amenity": "bar",
+        "contact:phone": "+43 676 4717441",
+        "indoor_seating": "yes",
+        "name": "Oldies Tanzbar Laterndl",
+        "opening_hours": "Mo-Sa 20:00-04:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0253315,
+          47.8054328
+        ]
+      },
+      "id": "node/5373736775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5388170728",
+        "amenity": "bar",
+        "name": "Apo Bar",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0471132,
+          47.7997658
+        ]
+      },
+      "id": "node/5388170728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5433349101",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "20",
+        "addr:postcode": "5020",
+        "addr:street": "Saint-Julien-Straße",
+        "amenity": "bar",
+        "dance:teaching": "yes",
+        "email": "office@tanzschule-seifert.at",
+        "leisure": "dance",
+        "level": "5",
+        "name": "Tanzschule Seifert",
+        "phone": "+43 662 420683",
+        "source": "survey",
+        "website": "www.tanzschule-seifert.at"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.042576,
+          47.8104953
+        ]
+      },
+      "id": "node/5433349101"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5434309262",
+        "amenity": "bar",
+        "check_date:opening_hours": "2024-04-15",
+        "indoor_seating": "yes",
+        "name": "Mentor's",
+        "opening_hours:signed": "no",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0391821,
+          47.8005467
+        ]
+      },
+      "id": "node/5434309262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5512280077",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Hype Bar",
+        "opening_hours": "Tu-Th 10:00-24:00, Fr-Su 10:00-01:30",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0303714,
+          47.8114636
+        ]
+      },
+      "id": "node/5512280077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5589272447",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "18A",
+        "addr:postcode": "5020",
+        "addr:street": "Ignaz-Harrer-Straße",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Laganini",
+        "opening_hours": "Mo-Sa 17:00-04:00; Su off",
+        "outdoor_seating": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0328268,
+          47.8112992
+        ]
+      },
+      "id": "node/5589272447"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5740614022",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "2",
+        "addr:postcode": "5020",
+        "addr:street": "Chiemseegasse",
+        "amenity": "bar",
+        "check_date": "2023-06-27",
+        "contact:email": "stagebar@outlook.com",
+        "contact:facebook": "https://www.facebook.com/stage.bar.982/",
+        "contact:mobile": "+43 650 453 05 47",
+        "name": "Stagebar",
+        "opening_hours": "We-Th 19:00-01:00; Fr-Sa 19:00-02:00",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0491626,
+          47.7977246
+        ]
+      },
+      "id": "node/5740614022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5764655836",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "6",
+        "addr:postcode": "5020",
+        "addr:street": "Glockengasse",
+        "amenity": "bar",
+        "contact:email": "office@heavy-rotation.biz",
+        "contact:phone": "+43 664 4014613",
+        "name": "Heavy Rotation",
+        "opening_hours": "Tu-Th 18:00-01:00, Fr 18:00-02:00, Sa 19:00-02:00",
+        "operator": "Rene Brunner"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.051642,
+          47.8047942
+        ]
+      },
+      "id": "node/5764655836"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6194500771",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "12",
+        "addr:postcode": "5020",
+        "addr:street": "Schallmooser Hauptstraße",
+        "amenity": "bar",
+        "brewery": "yes",
+        "email": "jwallner@yahoo.de",
+        "indoor_seating": "yes",
+        "name": "Mirjam´s Pub",
+        "opening_hours": "Mo-We 17:00-04:00, Th-Fr 17:00-05:00, Sa 15:30-05:00",
+        "operator": "Jürgen Wallner",
+        "outdoor_seating": "yes",
+        "phone": "+43 662 873962",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0517038,
+          47.8053495
+        ]
+      },
+      "id": "node/6194500771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6194602715",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "20",
+        "addr:postcode": "5020",
+        "addr:street": "Schallmooser Hauptstraße",
+        "amenity": "bar",
+        "happy_hours": "Fr-Sa 22:00-24:00",
+        "lgbtq": "primary",
+        "name": "Mexxx Gay Bar",
+        "opening_hours": "Su-Th 20:30-04:00; Fr-Sa 20:30-05:00",
+        "outdoor_seating": "no",
+        "website": "https://mexxxgaybar.at/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0527203,
+          47.8056809
+        ]
+      },
+      "id": "node/6194602715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6407530725",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Maria's Gecco",
+        "opening_hours": "Mo-Sa 11:00-23:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0506286,
+          47.8082747
+        ]
+      },
+      "id": "node/6407530725"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6428432696",
+        "addr:housenumber": "9",
+        "addr:street": "Bergstraße",
+        "amenity": "bar",
+        "description": "Wine bar",
+        "indoor_seating": "yes",
+        "name": "Coquette Weinbar",
+        "opening_hours": "Tu-Fr 17:00-23:00; Sa 15:00-23:00",
+        "outdoor_seating": "no",
+        "website": "https://coquette.at/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0457458,
+          47.8031425
+        ]
+      },
+      "id": "node/6428432696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6702880684",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "10a",
+        "addr:postcode": "5020",
+        "addr:street": "Schallmooser Hauptstraße",
+        "amenity": "bar",
+        "contact:website": "https://www.burdock.at/",
+        "indoor_seating": "yes",
+        "name": "Burdock",
+        "opening_hours": "Tu-Th 17:00-24:00; Fr,Sa 17:00-02:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0516141,
+          47.8053153
+        ]
+      },
+      "id": "node/6702880684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6702899572",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "28",
+        "addr:postcode": "5020",
+        "addr:street": "Rainerstraße",
+        "amenity": "bar",
+        "brewery": "Zwettler",
+        "contact:email": "hugoes14@arte-salzburg.at",
+        "contact:phone": "+43 662 877500",
+        "contact:website": "https://www.arte-salzburg.at/hotel/hugoes14",
+        "name": "hu:goes14",
+        "opening_hours": "Su-Th 16:00-24:00; Fr-Sa 16:00-01:00",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0435876,
+          47.810905
+        ]
+      },
+      "id": "node/6702899572"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6758808539",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "4D",
+        "addr:postcode": "5020",
+        "addr:street": "Glockengasse",
+        "amenity": "bar",
+        "check_date": "2023-06-27",
+        "contact:email": "info@zazibar.at",
+        "contact:phone": "+43 664 9150269",
+        "contact:website": "https://www.zazibar.at/",
+        "name": "Zazibar",
+        "opening_hours": "Mo-Sa 17:00-02:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0503585,
+          47.8043994
+        ]
+      },
+      "id": "node/6758808539"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7888133465",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "nine",
+        "outdoor_seating": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0419663,
+          47.8118041
+        ]
+      },
+      "id": "node/7888133465"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7909855685",
+        "amenity": "bar",
+        "check_date": "2025-04-07",
+        "name": "Sottile's"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0479478,
+          47.8040451
+        ]
+      },
+      "id": "node/7909855685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8117180567",
+        "amenity": "bar",
+        "cuisine": "burger;grill",
+        "indoor_seating": "yes",
+        "name": "Szene Lokal",
+        "opening_hours": "Su-Th 11:00-24:00; Fr-Sa 11:00-02:00",
+        "opening_hours:kitchen": "11:00-22:00",
+        "outdoor_seating": "yes",
+        "toilets": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0395202,
+          47.8011787
+        ]
+      },
+      "id": "node/8117180567"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8632057244",
+        "addr:city": "Salzburg",
+        "addr:housenumber": "22",
+        "addr:postcode": "5020",
+        "addr:street": "Rudolf-Biebl-Straße",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "NarrenCastl",
+        "opening_hours": "Mo-Su 17:00-22:00",
+        "outdoor_seating": "yes",
+        "phone": "+43 650 9701506",
+        "website": "https://www.narrencastl.at/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.026837,
+          47.808588
+        ]
+      },
+      "id": "node/8632057244"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9568713383",
+        "amenity": "bar",
+        "name": "Trau Di"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0422431,
+          47.8111163
+        ]
+      },
+      "id": "node/9568713383"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9568786584",
+        "amenity": "bar",
+        "name": "Josepha",
+        "website": "https://wirsindjosepha.at"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0405307,
+          47.8003611
+        ]
+      },
+      "id": "node/9568786584"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10151450674",
+        "amenity": "bar",
+        "name": "Oyster Bar",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0485323,
+          47.7983092
+        ]
+      },
+      "id": "node/10151450674"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10959826305",
+        "amenity": "bar",
+        "name": "Blaue Gans"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0406707,
+          47.7995684
+        ]
+      },
+      "id": "node/10959826305"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10961088506",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Stadtkrug",
+        "opening_hours": "Tu-Sa 15:00-24:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0460609,
+          47.802625
+        ]
+      },
+      "id": "node/10961088506"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10961101705",
+        "amenity": "bar",
+        "name": "Hôtel Krone"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0472402,
+          47.8035787
+        ]
+      },
+      "id": "node/10961101705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11963054570",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Zum Stern",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0322222,
+          47.815452
+        ]
+      },
+      "id": "node/11963054570"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12084611114",
+        "addr:city": "Salzburg",
+        "addr:country": "AT",
+        "addr:housenumber": "11",
+        "addr:postcode": "5020",
+        "addr:street": "Steingasse",
+        "amenity": "bar",
+        "at_bev:addr_date": "2024-04-01",
+        "name": "Saitensprung",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0460152,
+          47.8012934
+        ]
+      },
+      "id": "node/12084611114"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12387856327",
+        "amenity": "bar",
+        "name": "Bar Roque"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.0434838,
+          47.815083
+        ]
+      },
+      "id": "node/12387856327"
+    }
+  ]
+}
