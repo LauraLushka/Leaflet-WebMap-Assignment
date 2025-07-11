@@ -1,211 +1,179 @@
-* Project Report *
+# Project Report
 
 This interactive web map helps students discover essential locations in Salzburg, including:
 
--Study spots (libraries, cafes)
+- Study spots (libraries, cafes)
+- Student housing (dorms, affordable areas)
+- Transport hubs (bus stops)
+- Nightlife & social spots (bars, clubs)
+- Parks & recreational areas
 
--Student housing (dorms, affordable areas)
+---
 
--Transport hubs (bus stops)
+## Key Features
 
--Nightlife & social spots (bars, clubs)
+- Day/Night mode toggle  
+- English/German language support  
+- Search functionality  
+- Filterable categories  
+- Student tips panel  
 
--Parks & recreational areas
+---
 
-*Key Features:
+## Target Users
 
- Day/Night mode toggle
- 
- English/German language support
- 
- Search functionality
- 
- Filterable categories
- 
- Student tips panel
+- International students – Newcomers unfamiliar with Salzburg  
+- Local students – Exploring new study/social spots  
+- Visitors – Finding student-friendly locations  
 
-*Target Users:
+---
 
--International students – Newcomers unfamiliar with Salzburg
+## Data Sources
 
--Local students – Exploring new study/social spots
+All data was extracted from **Overpass Turbo (OSM)** and some was manually filtered.
 
--Visitors – Finding student-friendly locations
+---
 
-*Data Sources:
+## Methodology
 
-All data was extracted from Overpass Turbo (OSM) and some was manually filtered.
-
-*Methodology:
-
-1. Data Collection & Processing
-   
-Collected from OpenStreetMap
-
+### 1. Data Collection & Processing
+Collected from OpenStreetMap  
 Converted to GeoJSON for Leaflet compatibility.
 
-2. Technical Implementation
-   
-Frontend:
+### 2. Technical Implementation
 
-Leaflet.js for map rendering
+**Frontend**
 
-Custom icons (Font Awesome)
+- Leaflet.js for map rendering  
+- Custom icons (Font Awesome)  
+- Responsive CSS (works on mobile/desktop)  
 
-Responsive CSS (works on mobile/desktop)
+**UX Features**
 
-UX Features:
+- Dark/light mode  
+- Interactive popups  
+- Persistent tips panel  
 
-Dark/light mode
+### 3. Testing & Optimization
+- Tested on Chrome, Safari  
+- Optimized for fast loading  
+- Mobile-friendly design  
 
-Interactive popups
+---
 
-Persistent tips panel
+## Design Choices
 
-3. Testing & Optimization
-   
-Tested on Chrome, Safari
+- Visual Hierarchy  
+- Color-coded categories (e.g., green for parks, blue for libraries)  
+- Contrasting UI elements (dark mode support)  
+- Minimalist icons (Font Awesome)  
 
-Optimized for fast loading 
+---
 
-Mobile-friendly design
+## Interaction Design
 
-*Design Choices:
+- Hover effects on buttons/markers  
+- Modal dialogs for additional info  
+- Search bar for quick navigation  
 
--Visual Hierarchy
+---
 
--Color-coded categories (e.g., green for parks, blue for libraries)
+## Analysis
 
--Contrasting UI elements (dark mode support)
+### Successes
+- ✅ Intuitive navigation – Users quickly find locations  
+- ✅ Multilingual support – Helps international students  
+- ✅ Performance – Smooth even with 100+ markers  
 
--Minimalist icons (Font Awesome)
+### Challenges
+- Data accuracy – Some locations needed manual verification  
+- Mobile rendering – Required extra optimization  
 
-*Interaction Design:
+---
 
--Hover effects on buttons/markers
+## Potential Improvements
 
--Modal dialogs for additional info
+- Route planning  
+- Offline caching  
 
--Search bar for quick navigation
+---
 
-*Analysis:
+## Critical Reflection
 
-Successes
+### What Worked Well
+1. Clean, intuitive UI  
+2. Effective use of open-source tools  
+3. Fast load times  
 
-✅ Intuitive navigation – Users quickly find locations
+### Lessons Learned
+1. Data maintenance is ongoing – Some POIs change frequently  
+2. Mobile UX requires extra attention – Touch targets, zoom levels  
+3. Balance simplicity vs. features – Avoid overwhelming users  
 
-✅ Multilingual support – Helps international students
+---
 
-✅ Performance – Smooth even with 100+ markers
+## Key Takeaways
+1. Well-structured geodata is crucial – GeoJSON worked perfectly.  
+2. Context matters – Student needs differ from tourists.  
+3. Flexibility pays off – Dark mode & multilingual support were worth the effort.  
 
-*Challenges:
+---
 
- Data accuracy – Some locations needed manual verification
- 
- Mobile rendering – Required extra optimization
+# Code Explanation
 
-*Potential Improvements:
+## Core Structure
 
--Route planning	
+### 1. HTML Framework
+Single-page application with all UI elements  
 
--Offline caching	
+**Contains**
 
-*Critical Reflection:
+- Map container (`<div id="map">`)  
+- Title bar with emojis  
+- Info button/modal  
+- Control panels (language/day-night toggles)  
+- Student tips panel  
+- Poll button  
 
--What Worked Well:
+### 2. CSS Styling
+Mobile-first responsive design  
 
-1.Clean, intuitive UI
+**Key features**
 
-2.Effective use of open-source tools
+- Absolute positioning for overlay elements  
+- Dark mode support via `.dark-mode` class  
+- Custom icons using Font Awesome  
+- Z-index management for layer ordering  
 
-3.Fast load times
+### 3. JavaScript Components
 
-*Lessons Learned:
+- Leaflet.js for map rendering  
+- Turf.js for geospatial calculations  
+- Custom functionality for:  
+  - Layer management  
+  - Language switching  
+  - Theme toggling  
+  - Search functionality  
 
-1.Data maintenance is ongoing – Some POIs change frequently
+---
 
-2.Mobile UX requires extra attention – Touch targets, zoom levels
+## Map System
 
-3.Balance simplicity vs. features – Avoid overwhelming users
-
-*Key Takeaways:
-
-1.Well-structured geodata is crucial – GeoJSON worked perfectly.
-
-2.Context matters – Student needs differ from tourists.
-
-3.Flexibility pays off – Dark mode & multilingual support were worth the effort.
-
-
-
-
-
-* Code Explanation *
-
-*Core Structure:
-
-1.HTML Framework
-
-Single-page application with all UI elements
-
-Contains:
-
--Map container (<div id="map">)
-
--Title bar with emojis
-
--Info button/modal
-
--Control panels (language/day-night toggles)
-
--Student tips panel
-
--Poll button
-
-2.CSS Styling
-
-Mobile-first responsive design
-
-Key features:
-
--Absolute positioning for overlay elements
-
--Dark mode support via .dark-mode class
-
--Custom icons using Font Awesome
-
--Z-index management for layer ordering
-
-3.JavaScript Components
-
--Leaflet.js for map rendering
-
--Turf.js for geospatial calculations
-
--Custom functionality for:
-
-   -Layer management
-
-   -Language switching
-
-   -Theme toggling
-
-   -Search functionality
-
-*Map System
-
+```javascript
 const map = L.map('map').setView([47.8095, 13.0550], 14);
+```
 
--Centers on Salzburg (47.8095°N, 13.0550°E)
+-	Centers on Salzburg (47.8095° N, 13.0550° E)
+-	Zoom level 14 (neighborhood-scale)
+-	Uses CartoDB basemaps (light/dark variants)
 
--Zoom level 14 (neighborhood-scale)
+⸻
 
--Uses CartoDB basemaps (light/dark variants)
+Key Functions
 
-*Key Functions
+1. Data Loading
 
-1.Data Loading
-
+```javascript
 function loadGeoJSON(layerName, fileName, icon) {
   fetch(`data/${fileName}.geojson`)
     .then(response => response.json())
@@ -213,84 +181,68 @@ function loadGeoJSON(layerName, fileName, icon) {
       // Creates markers for each feature
     });
 }
+```
 
--Loads 11 different GeoJSON datasets
+-	Loads 11 different GeoJSON datasets
+-	Converts all features to point markers
+-	Adds custom icons and popups
 
--Converts all features to point markers
+2. Layer Management
 
--Adds custom icons and popups
-
-2.Layer Management
-
+```javascript
 const layers = {
   cafes: L.layerGroup(),
   libraries: L.layerGroup(),
   // ...9 other categories
 };
+```
 
--Organized by location type
+-	Organized by location type
+-	Enables individual category toggling
 
--Enables individual category toggling
+### 3. UI Controls
 
-3.UI Controls
+- **Day/Night Toggle** – Switches basemap and UI theme  
+- **Language Switch** – Updates all text elements (EN/DE)  
+- **Search** – Location lookup via Leaflet.Search  
 
--Day/Night Toggle: Switches basemap and UI theme
+---
 
--Language Switch: Updates all text elements (EN/DE)
+## Design Features
 
--Search: Location lookup via Leaflet.Search
+### 1. Visual Hierarchy
 
-*Design Features
+- Color-coded categories (green for parks)  
+- Consistent icon system (Font Awesome)  
+- Contrasting UI elements  
 
-1.Visual Hierarchy
+### 2. User Experience
 
--Color-coded categories (green for parks)
+- Persistent student tips panel  
+- Interactive modal for help  
+- Hover effects on controls  
+- Mobile-friendly layout  
 
--Consistent icon system (Font Awesome)
+---
 
--Contrasting UI elements
+## Technical Highlights
 
-2.User Experience
+### 1. Performance Optimizations
 
--Persistent student tips panel
+- Layer groups for batch operations  
+- Dynamic popup content generation  
+- Lazy loading of GeoJSON data  
 
--Interactive modal for help
+### 2. Accessibility
 
--Hover effects on controls
+- High-contrast modes  
+- Keyboard-navigable controls  
+- Scalable UI elements  
 
--Mobile-friendly layout
+---
 
-*Technical Highlights
+## Key Takeaways
 
-1.Performance Optimizations
-
--Layer groups for batch operations
-
--Dynamic popup content generation
-
--Lazy loading of GeoJSON data
-
-2.Accessibility
-
--High-contrast modes
-
--Keyboard-navigable controls
-
--Scalable UI elements
-
-
-*Key Takeaways
-
--Well-structured geodata is crucial for usability
-
--Contextual presentation enhances value for students
-
--Flexible interfaces accommodate diverse users
-
-
-
-
-
-
-
-
+- Well-structured geodata is crucial for usability  
+- Contextual presentation enhances value for students  
+- Flexible interfaces accommodate diverse users  
